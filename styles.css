@@ -19,9 +19,7 @@ a {
     max-width: 1200px;
     margin: 0 auto;
 }
-nav {
-    display: flex;
-}
+
 img {
     width: 100%;
 }
@@ -29,35 +27,72 @@ img {
 p {
     line-height: 1.5;
 }
-.nav__container {
-    width: 100%;
-    padding: 0 24px;
-    max-width: 1200px;
+
+ul {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+    gap: 8px;
 }
+
+ li {
+    list-style: none;
+ }
+
+ /* Nav Bar */
+
+nav {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 10px;
+}
+
+.nav__links {
+    display: flex;
+    margin: 30px;
+    gap: 30px
+}
+.nav__link {
+    color:black;
+    position: relative;
+    transition: 03.s;
+}
+
+.nav__link:hover {
+    color: rgba(15, 15, 15, 0.532);
+}
+
+.nav__logo {
+    margin-right: auto;
+}
+
 .logo {
     width: 100px;
     height: 100px;
 }
+
 .logo__name {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 400px;
-    margin-bottom: 50px;
 }
 
-.nav__link {
-    color:black;
+.btns {
+    display: flex;
+    width: 90px;
+    height: 50px;
 }
 
-ul {
-    display: flex;
-    justify-content: space-between;
+.btn {
+    padding: 0.5rem 1.5rem;
+    border-radius: 30px;
+    background-color: rgb(91, 69, 197);
+    color: white;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
 }
- li {
-    list-style: none;
- }
+
+.btn:hover {
+    background-color:  rgb(38, 10, 180);
+    box-shadow: 0 0 25px rgba(15, 15, 15, 0.532);
+}
