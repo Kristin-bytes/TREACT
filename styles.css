@@ -191,12 +191,17 @@ nav {
     padding: 20px;
 }
 .service__img {
-    text-align: center;
     height: 20px;
     width: 20px;
 }
 
 .service__img--wrapper {
+    padding-top: 20px;
+    text-align: center;
+    border: solid rgb(178, 178, 179);
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
 }
 
 .services {
