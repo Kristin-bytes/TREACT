@@ -38,7 +38,7 @@ ul {
  }
 
  .purple {
-    color: rgb(38, 10, 180)
+    color: rgb(38, 10, 180);
  }
 
  h3 {
@@ -47,8 +47,9 @@ ul {
  }
 
  h4 {
-        color: rgb(20, 20, 96);
+        color: rgb(38, 10, 180);
         font-weight: 700;
+        font-size: 20px;
 
  }
  p {
@@ -169,4 +170,52 @@ nav {
 .beautiful__img {
     width: 60%;
     padding: 14px;
+}
+
+
+/* Features */
+
+.features__container {
+    padding: 80px;
+}
+
+.features__row {
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.features__title {
+    font-size: 50px;
+    padding: 20px;
+}
+.service__img {
+    text-align: center;
+    height: 20px;
+    width: 20px;
+}
+
+.service__img--wrapper {
+}
+
+.services {
+    padding-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.service {
+    display: flex;
+    flex-direction: column;
+    width: calc(100%/3);
+    padding: 15px;
+}
+
+.service__title {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 20px;
+    padding-bottom: 10px;
 }
