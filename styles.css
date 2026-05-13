@@ -308,3 +308,28 @@ nav {
     padding: 10px;
 }
 
+/* VALUES */
+.values__container {
+    display: flex;
+    margin: 50px;
+}
+
+.values__row {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.steps__img {
+    width: 50%;
+}
+.principle__img--wrapper i {
+    color: darkgreen;
+}
+
+.principle__img--wrapper-2 {
+    color: rgb(152, 22, 22);
+}
+.principles {
+    display: flex;
+}
