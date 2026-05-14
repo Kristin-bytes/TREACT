@@ -26,6 +26,7 @@ img {
 
 p {
     line-height: 1.5;
+    color: lightslategray;
 }
 
 ul {
@@ -50,11 +51,9 @@ ul {
         color: rgb(38, 10, 180);
         font-weight: 700;
         font-size: 20px;
+        
+ }
 
- }
- p {
-    color: lightslategray;
- }
  /* Nav Bar */
 
 nav {
@@ -110,6 +109,7 @@ nav {
 
 .btn {
     margin-right: 10px;
+    margin-bottom: 20px;
     padding: 0.5rem 1.5rem;
     border-radius: 30px;
     background-color: rgb(91, 69, 197);
@@ -320,16 +320,71 @@ nav {
     width: 50%;
 }
 
+.values__heading, .values__title, .values__para, .principle__title {
+    margin-bottom: 10px;
+}
+
+.title__para {
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
 .steps__img {
     width: 50%;
 }
 .principle__img--wrapper i {
     color: darkgreen;
+    margin-right: 10px;
+    
 }
 
-.principle__img--wrapper-2 {
+.principle__img--wrapper {
+    display: flex;
+    
+}
+
+.principle__img--wrapper-2 i {
     color: rgb(152, 22, 22);
+    margin-right: 10px;
+}
+.principle__img--wrapper-2 {
+    display: flex;
+    
 }
 .principles {
     display: flex;
+    flex-direction: column;
+}
+
+.principle {
+    margin-bottom: 20px;
+}
+
+/* Pricing */
+.pricing__row {
+    text-align: center;
+}
+
+.pricing__heading, .pricing__title, .pricing__para {
+    margin-bottom: 10px;
+}
+
+.pricing__boxes {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box__1 {
+    border: 1px solid lightslategray;
+    border-radius: 8px;
+    padding: 10px;
+
+}
+.pricing__box {
+    border-bottom: 1px solid lightslategray;
+}
+
+.pricing__description {
+        border-bottom: 1px solid lightslategray;
+
 }
