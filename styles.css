@@ -103,7 +103,7 @@ nav {
 .btns {
     display: flex;
     width: 90px;
-    height: 50px;
+    height: 70px;
 }
 
 .btn {
@@ -609,6 +609,9 @@ nav {
 
 .footer__logo--container {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-right: auto;
     background-color: rgb(76, 81, 191);
 }
 
@@ -616,17 +619,16 @@ nav {
     width: 50px;
     height: 50px;
     padding: 10px;
-    margin-left: 50px;
     
 }
 
 .footer__logo {
     display: flex;
-    align-items: center;
-    margin-right: auto;
     font-size: 20px;
     color: white;
     font-weight: 900;
+    margin-right: auto;
+    
 }
 
 .footer__copyright {
@@ -634,16 +636,27 @@ nav {
     align-items: center;
     justify-content: center;
     color: white;
+    margin: 30px;
+    
 }
 
 .footer__links {
     color: white;
-    display: flex;
-    align-items: center;
-    margin: 30px;
     font-size: 30px;
 }
 
 .footer__links i {
     padding: 10px;
+}
+
+/* Media Queries */
+
+/* small phones, large smartphones */ 
+
+@media (max-width: 550px) {
+    .nav__links {
+        display: none;
+    }
+
+
 }
