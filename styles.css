@@ -583,7 +583,9 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 30px;
+    margin-bottom: 0;
     padding: 30px;
+    border-bottom: 1px solid rgb(199, 201, 203);
 }
 
 .footer__column {
@@ -604,3 +606,44 @@ nav {
 .footer__link:hover {
     text-decoration: underline 2px;
 }   
+
+.footer__logo--container {
+    display: flex;
+    background-color: rgb(76, 81, 191);
+}
+
+.footer__logo--img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin-left: 50px;
+    
+}
+
+.footer__logo {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+    font-size: 20px;
+    color: white;
+    font-weight: 900;
+}
+
+.footer__copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.footer__links {
+    color: white;
+    display: flex;
+    align-items: center;
+    margin: 30px;
+    font-size: 30px;
+}
+
+.footer__links i {
+    padding: 10px;
+}
