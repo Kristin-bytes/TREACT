@@ -661,7 +661,8 @@ nav {
 }
 
 .menu__backdrop {
-    position: absolute;
+    position: fixed;
+    color: #243e63;
     background-color: white;
     top: 0;
     left: 0;
@@ -698,7 +699,7 @@ nav {
 
 .menu__link {
     font-size: 40px;
-    color: #fff;
+    color: #243e63;
 }
 
 /* Media Queries */
@@ -712,5 +713,15 @@ nav {
 
      #beautiful, #features, #quality, #steps, #values, #pricing, #testimonials, #developers {
         margin: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav__links, .btns {
+        display: none;
+    }
+
+    .btn__menu {
+        display: block;
     }
 }
