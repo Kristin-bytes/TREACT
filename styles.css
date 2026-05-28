@@ -649,14 +649,69 @@ nav {
     padding: 10px;
 }
 
+/*btn menu open/close */
+
+.btn__menu {
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    text-align: center;
+    color: black;
+    display: none;
+}
+
+.menu__backdrop {
+    position: absolute;
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.menu--open, .menu__backdrop {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu--open {
+    max-height: 100vh;
+    overflow-y: hidden;
+}
+
+.menu__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__list {
+    padding: 32px 0;
+}
+
+.menu__link {
+    font-size: 40px;
+    color: #fff;
+}
+
 /* Media Queries */
 
 /* small phones, large smartphones */ 
 
-@media (max-width: 550px) {
+@media (max-width: 480px) {
     .nav__links {
         display: none;
     }
 
-
+     #beautiful, #features, #quality, #steps, #values, #pricing, #testimonials, #developers {
+        margin: 10px;
+    }
 }
