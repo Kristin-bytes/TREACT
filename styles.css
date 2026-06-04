@@ -377,15 +377,23 @@ nav {
 
 /* Pricing */
 
-.pricing__container {
-    margin: 80px;
-}
-.pricing__row {
+
+.pricing__section {
     text-align: center;
 }
 
+.pricing__para {
+    display: inline-block;
+    text-align: center;
+    max-width: 576px;
+}
+
 .pricing__title, .pricing__para {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.pricing__box {
+    border-bottom: 1px solid rgb(199, 201, 203);
 }
 
 .pricing__boxes {
@@ -396,15 +404,16 @@ nav {
 }
 
 .box__1, .box__2, .box__3 {
+    position: relative;
+    width: calc(100%/3);
+    display: flex;
+    flex-direction: column;
     border: 1px solid rgb(199, 201, 203);
     border-radius: 8px;
     padding: 10px;
     text-align: center;
+}
 
-}
-.pricing__box {
-    border-bottom: 1px solid rgb(199, 201, 203);
-}
 
 .pricing__description {
         border-bottom: 1px solid rgb(199, 201, 203);
@@ -466,20 +475,20 @@ nav {
 
 /* Testimonials */
 
-.testimonial__container {
+.testimonial__box {
     display: flex;
-    margin: 80px;
 }
 
 .testimonial__row {
     display: flex;
     flex-direction: column;
-    margin: 30px;
+    margin-left: 60px;
     text-align: left;
 }
 
 .testimonial__img--1 {
     width: 100%;
+    margin-top: 140px;
 }
 
 .testimonial__title--1, .testimonial__para {
@@ -487,7 +496,8 @@ nav {
 }
 
 .testimonial__rating {
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     color: goldenrod;
 }
 
@@ -517,7 +527,6 @@ nav {
 }
 .testimonial__btns {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
@@ -536,27 +545,33 @@ nav {
 
 /* Developers */
 
-.developers__container {
-    margin: 80px;
+.developers__box {
+    width: 100%;
     background-color: #6415ff;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border-radius: 8px;
 }
 
 .developers__row {
+    padding: 96px 0;
     color: white;
     text-align: center;
-    margin: 120px;
-    margin-bottom: 60px;
+    margin: 40px;
 }
 
 .developers__btns {
     display: flex;
     justify-content: center;
-    margin-bottom: 80px;
+    align-items: center;
 }
 
+
+.developer__heading {
+    font-size: 30px;
+    text-align: left;
+}
 .dev__btn--1, .dev__btn--2 {
     margin: 40px;
     padding: 20px;
@@ -592,6 +607,7 @@ nav {
 
 .footer__row {
     background-color: #6415ff;
+    padding: 30px;
 }
 
 .footer__columns {
@@ -623,10 +639,18 @@ nav {
     text-decoration: underline 2px;
 }   
 
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 .footer__logo--container {
+    
+    padding: 40px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    width: 100%;
     margin-right: auto;
     background-color: #6415ff;
 }
