@@ -51,6 +51,7 @@ ul {
  }
 
  h1 {
+    color: rgb(36, 62, 99);
     font-size: 50px;
  }
  h3 {
@@ -63,6 +64,10 @@ ul {
         font-weight: 700;
         font-size: 20px;
         margin-bottom: 20px;
+ }
+
+ html {
+    scroll-behavior: smooth;
  }
 
  /* Nav Bar */
@@ -751,9 +756,42 @@ nav {
         display: none;
     }
 
-     #beautiful, #features, #quality, #steps, #values, #pricing, #testimonials, #developers {
-        margin: 10px;
+   
+    .container {
+        padding: 40px 0;
     }
+ 
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+    .beautiful__row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .features__title {
+        font-size: 40px;
+    }
+
+ .features__row {
+        padding: 10px;
+    }  
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        flex-direction: column;
+        
+    }
+
+    
 }
 
 @media (max-width: 768px) {
