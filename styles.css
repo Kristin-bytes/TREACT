@@ -354,7 +354,7 @@ nav {
     margin-right: 10px;
 }
 
-.steps__img {
+.values__img {
     width: 50%;
     margin-left: 30px;
 }
@@ -773,6 +773,14 @@ nav {
         align-items: center;
     }
 
+    .beautiful__box, .beautiful__img {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .beautiful__title, .beautiful__description, .customers {
+        text-align: center;
+    }
 
     .features__title {
         font-size: 40px;
@@ -788,10 +796,55 @@ nav {
 
     .service {
         flex-direction: column;
-        
+        align-items: center;
+        text-align: center;
+        width: 100%;
     }
 
+    .feature__text {
+       margin-left: 0;
+    }
+
+    .quality__row {
+        flex-direction: column-reverse;
+    }
+
+    .quality__box, .quality__img {
+        width: 100%;
+    }
+
+    .quality__box {
+        text-align: center;
+    }
+    .quality__img {
+        margin: 0;
+        margin-bottom: 30px;
+    }
     
+    .steps__row {
+        flex-direction: column;
+    }
+
+    .steps__img, .steps__box {
+        width: 100%;
+    }
+
+    .steps__wrapper {
+        flex-direction: column;
+    }
+    .steps__img {
+        margin-left: 0;
+    }
+
+    .steps__box {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .values__row {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
