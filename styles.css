@@ -162,12 +162,22 @@ nav {
 .beautiful__email {
     margin-left: 20px;
     margin-bottom: 40px;
+    width: 100%;
+    max-width: 448px;
+    height: 68px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border: 2px solid rgb(229, 231, 235);
+    border-radius: 500px;
 }
 
 .input__email {
-    border: solid lightslategrey;
-    border-radius: 20px;
-    padding: 10px;
+    color: rgb(229, 231, 235);
+    border: none;
+    font-size: 16px;
+    font-weight: 500;   
 }
 
 .customers {
@@ -257,6 +267,7 @@ nav {
     display: flex;
     flex-direction: column;
     margin-right: 64px;
+    align-items: start;
 }
 
 .quality__img {
@@ -335,6 +346,7 @@ nav {
     display: flex;
     flex-direction: column;
     width: 50%;
+    align-items: start;
 }
 
 .principles {
