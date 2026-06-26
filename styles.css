@@ -302,14 +302,12 @@ nav {
     align-items: start;
 }
 
-.quality__img {
+.quality__img--wrapper {
     width: 50%;
     margin: 0 56px;
-    border-radius: 4px;
-    border: 1px solid rgb(229, 231, 235);
 }
 
-.quality__img i {
+.quality__img  {
     border-radius: 4px;
     border: 1px solid rgb(229, 231, 235);
 }
@@ -579,10 +577,13 @@ nav {
     margin-top: 140px;
 }
 
-.testimonial__title--1, .testimonial__para {
+.testimonial__title--1, {
     margin-bottom: 10px;
 }
 
+.testimonial__para {
+    margin-bottom: 30px;
+}
 .testimonial__rating {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -912,9 +913,10 @@ nav {
         text-align: center;
     }
 
-    .quality__img {
-        margin: 0;
-        margin-bottom: 30px;
+    .quality__img--wrapper {
+        margin-bottom: 50px;
+        width: 100%;
+        max-width: 448px;
     }
     
     .steps__row {
@@ -983,7 +985,7 @@ nav {
 
     .testimonial__img--1 {
         margin-top: 30px;
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
 
     .testimonial__row {
@@ -1006,11 +1008,13 @@ nav {
     }
 
     .developers__row {
-        padding: 30px 0;
-        
+        flex-direction: column;
+        padding: 0;
     }
     .developer__heading {
         text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
     }
 
     .developers__btns {
@@ -1022,7 +1026,7 @@ nav {
     }
 
     .dev__btn--2 {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
 
     .footer__columns {
