@@ -33,7 +33,7 @@ img {
 
 p {
     line-height: 1.5;
-    color: lightslategray;
+    color: #7c8ba1;
     font-size: 18px;
 }
 
@@ -51,19 +51,20 @@ ul {
  }
 
  h1 {
-    color: rgb(36, 62, 99);
+    color: #243e63;
     font-size: 50px;
  }
  h3 {
-    color: rgb(20, 20, 96);
+    color: #243e63;
     font-weight: 400;
  }
 
  h4 {
         color: #6415ff;
         font-weight: 700;
-        font-size: 20px;
+        font-size: 16px;
         margin-bottom: 20px;
+        letter-spacing: 1.6px;
  }
 
  html {
@@ -80,6 +81,7 @@ nav {
     justify-content: flex-end;
     margin: 10px;
 }
+
 .nav__logo--container {
     display: flex;
     align-items: center;
@@ -92,7 +94,8 @@ nav {
     gap: 30px
 }
 .nav__link {
-    color: rgb(20, 20, 96);
+    color: #243e63;
+    font-weight: 500;
     position: relative;
     transition: 03.s;
 }
@@ -106,15 +109,18 @@ nav {
 }
 
 .logo {
-    width: 100px;
-    height: 100px;
-    padding: 10px;
+    height: 40px;
+    width: 40px;
+    
 }
 
 .logo__name {
-    color: rgb(20, 20, 96);
-    font-size: 30px;
+    color: #243e63;
+    font-size: 24px;
     font-weight: 900;
+    margin-left: 12px;
+    padding-bottom: 2px;
+    letter-spacing: 0.6px;
 }
 
 .btns {
@@ -155,13 +161,21 @@ nav {
 }
 .beautiful__title,
 .beautiful__description {
-    margin: 20px;
+    margin: 32px 0;
     text-align: left;
 }
 
+.beautiful__title {
+    font-size: 36px;
+    color: #1a202c;
+    line-height: 1.25;
+}
+
+.beautiful__description {
+    color: #243e63;
+    font-size: 16px;
+}
 .beautiful__email {
-    margin-left: 20px;
-    margin-bottom: 40px;
     width: 100%;
     max-width: 448px;
     height: 68px;
@@ -194,16 +208,17 @@ nav {
     
 }
 
-.getstartedbtn {
-    padding-left: 10px;
-}
 .customers {
-    text-align: left;
-    margin: 20px;
+    margin-top: 80px;
+    color: #a0aec0;
+    font-size: 12px;
+    font-weight: 700;
 }
 
 .customers__img {
-    margin: 20px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    opacity: 0.5;
 }
 
 .beautiful__img {
@@ -293,6 +308,11 @@ nav {
     border-radius: 4px;
     border: 1px solid rgb(229, 231, 235);
 }
+
+.quality__img i {
+    border-radius: 4px;
+    border: 1px solid rgb(229, 231, 235);
+}
 .quality__title {
     margin-bottom: 20px;
 }
@@ -345,8 +365,10 @@ nav {
 
 .step__title {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: 600;
     padding: 10px;
+    color: #243e63;
+    line-height: 1;
 }
 
 .step__description {
@@ -497,6 +519,7 @@ nav {
 .box__1 {
     box-shadow: 0px -8px 8px rgb(129, 230, 217);
     border-top: none;
+    
 }
 .pricing__btn--1 {
     background-color: rgb(129, 230, 217);
@@ -613,8 +636,9 @@ nav {
 /* Developers */
 
 .developers__box {
+    padding: 96px 0;
     width: 100%;
-    background-color: #6415ff;
+    background-color: rgb(100, 21, 255);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -622,10 +646,13 @@ nav {
 }
 
 .developers__row {
-    padding: 96px 0;
-    color: white;
-    text-align: center;
-    margin: 40px;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1024px;
+    padding: 0 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .developers__btns {
@@ -639,6 +666,10 @@ nav {
     font-size: 30px;
     text-align: left;
     color: whitesmoke;
+}
+
+.developer__heading, .developers__btns {
+    width: 50%;
 }
 .dev__btn--1, .dev__btn--2 {
     margin: 40px;
@@ -662,7 +693,6 @@ nav {
 .dev__btn--2 {
     border: solid white 1px;
     background-color: #6415ff;
-    box-shadow: rgb(44, 48, 121) 0px 4px 6px -2px;
 }
 
 .dev__btn--2:hover {
@@ -674,7 +704,7 @@ nav {
 /* Footer */
 
 .footer__row {
-    background-color: #6415ff;
+    background-color: rgb(100, 21, 255);
     padding: 30px;
 }
 
@@ -878,8 +908,10 @@ nav {
     }
 
     .quality__box {
+        align-items: center;
         text-align: center;
     }
+
     .quality__img {
         margin: 0;
         margin-bottom: 30px;
@@ -906,12 +938,16 @@ nav {
     }
 
     .values__row {
-        flex-direction: column;
+        flex-direction: column-reverse;
         text-align: center;
     }
 
+    .values__box {
+        align-items: center;
+    }
     .values__box, .values__img {
         width: 100%;
+        margin-bottom: 200px;
     }
 
     .values__img {
@@ -1015,6 +1051,8 @@ nav {
     .footer__logo {
         margin-right: 0;
     }
+
+    
 }
 
 @media (max-width: 768px) {
